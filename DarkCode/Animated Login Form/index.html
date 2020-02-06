@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="author" content="Przemek Krogulski">
+		
+		<title> Testimonial Section </title>
+		
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.min.js"
+		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		  crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" type="text/javascript"></script>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<form action="index.html" class="login-form">
+			<h1>Login</h1>
+			<div class="txtb">
+				<input type="text"/>
+				<span data-placeholder="Username"></span>
+			</div>
+			<div class="txtb">
+				<input type="password"/>
+				<span data-placeholder="Password"></span>
+			</div>
+			<input type="submit" class="logbtn" value="Login"/>
+			<div class="bottom-text">
+				Don't have account? <a href="#">Sign up</a>
+			</div>
+		</form>
+		<script type="text/javascript">
+			$('.txtb input').on('focus', function() {
+				$(this).addClass('focus');
+			});
+			
+			$('.txtb input').on('blur', function() {
+				if($(this).val() == '') {
+					$(this).removeClass('focus');
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.min.js"
+		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		  crossorigin="anonymous"></script>
+
+		<script>
+			//	GET 
+			/*
+			$(document).ready(function() {
+				$('button').click(function() {
+					$.get('test.txt', function(data, status) {
+						$('#test').html(data);
+						alert(status);
+					});
+				});
+			});
+			*/
+			
+			//	POST
+			$(document).ready(function() {
+				$('input').keyup(function() {
+					var name = $('input').val();
+					
+					$.post('suggestions.php', {
+						suggestion: name,
+					}, function(data, status) {
+						$('#test').html(data);
+					});
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+	<!--	GET
+		<button id="btn">Click to get more info</button>	
+		<p id="test"></p>
+	-->	
+		<input type="text" name="name">
+		<p id="test"></p>
+	</body>
+</html>

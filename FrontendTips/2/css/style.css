@@ -1,0 +1,43 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  background: red;
+}
+
+.container .paper {
+  width: 35px;
+  height: 45px;
+  background-color: #fff;
+  border: solid 5px blueviolet;
+  position: absolute;
+  border-left: none;
+  transform-origin: 0 50%;
+}
+
+.container .paper:nth-child(2) {
+  transform: rotate(180deg);
+}
+
+.container .paper {
+  @for $i from 1 through 12 {
+    &:nth-child(#($i)) {
+      
+    }
+  }
+}
+
+@keyframes flip {
+  0% {
+    
+  }
+  50% {
+    transform: rotate
+  }
+  100% {
+    
+  }
+}

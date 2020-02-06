@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.6rem;
+    background-color: #edeff0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 200;
+}
+
+input,
+textarea {
+    font-size: inherit;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #bbb;
+}
+
+label {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 2rem;
+}
+
+table th {
+    text-align: left;
+}
+
+.faded {
+    color: #bbb;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

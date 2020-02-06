@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="chat.css" rel="stylesheet" type="text/css">
+		<script src="chat.js" type="texft/javascript"></script>
+	</head>
+	
+	<body onload="init();">
+		<table id="content">
+			<tr>
+				<td>
+					<div id="scroll"></div>
+				</td>
+				<td id="colorpicker" valign="top">
+					<img src="palette.png" onclick="getColor(event);" alt="color picker">
+					<br>
+					<input id="color" type="hidden" readonly="true" value="#000000">
+					<span>(text will have choosen color)</span>
+				</td>
+			</tr>
+		</table>
+		
+		<div>
+			<input type="text" id="userName" maxlength="10" size="10" onblur="checkUsername();">
+			<input type="text" id="massageBox" maxlength="2000" size="50" onkeydown="handleKey(event);">
+			<input type="button" id="massageBox" value="send" onclick="sendMessage();">
+			<input type="button" id="massageBox" value="delete all" onclick="deleteAllMessages();">
+		</div>
+	</body>
+</html>

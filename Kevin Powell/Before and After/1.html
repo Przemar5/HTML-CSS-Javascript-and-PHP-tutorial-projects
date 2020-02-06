@@ -1,0 +1,26 @@
+<style>
+	body {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 3rem;
+	}
+	
+	p::before {
+		content: open-quote;
+		position: absolute;
+		left: 0;
+		background-color: red;
+		font-weight: 900;
+	}
+	
+	p::after {
+		content: close-quote;
+		background-color: red;
+		font-weight: 900;
+	}
+	
+</style>
+
+<p>Some generic text</p>

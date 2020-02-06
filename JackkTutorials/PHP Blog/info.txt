@@ -1,0 +1,1 @@
+Probably address with pid in del_post and edit_post doesn't work

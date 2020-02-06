@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<h1 class="display-4">Typography</h1>
+	  <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+	  <h1 class="display-1">Display 1</h1>
+	  <h1 class="display-2">Display 2</h1>
+	  <h1 class="display-3">Display 3</h1>
+	  <h1 class="display-4">Display 4</h1>
+</div>
+
+
+<div class="container">
+	<abbr title="table / tr / td"><code>table</code></abbr>:<br>
+	<code>table-striped</code><br>
+	<code>table-bordered</code><br>
+	<code>table-borderless</code><br>
+	<code>table-hover</code><br>
+	<code>table-*</code> <span class="text-secondary">(dark / light / color)</span><br>
+	<code>table-*</code> <span class="text-secondary">(sm / lg)</span><br>
+	<code>table-responsive-*</code> <span class="text-secondary">(sm / md / lg / xl)</span><br>
+	
+	<br>
+	
+	<code>thead-*</code> <span class="text-secondary">(dark / light)</span><br>
+	
+	<br>
+	
+	<code><h5>img:</h5></code>
+	<code>rounded</code><br>
+	<code>rounded-circle</code><br>
+	<code>img-thumbnail</code><br>
+	<code>img-fluid</code><br>
+	
+	<br>
+	
+	<code>float-*</code> <span class="text-secondary">(left / right)</span><br>
+	
+	<br>
+	
+	<code>jumbotron</code><br>
+	<code>jumbotron-fluid</code><br>
+	
+	<br>
+	
+	<code><h5>alert:</h5></code>
+	<code>alert</code><br>
+	<code>alert-*</code> <span class="text-secondary">(color)</span><br>
+	<code>alert-dismissible</code> <span class="text-secondary">(+show / +fade)</span><br>
+	
+	<br>
+	
+	<code>alert-link</code><br>
+	
+	<br>
+	
+	<div class="alert alert-success alert-dismissible fade show">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<strong>Success!</strong> Indicates a successful or positive action.
+	</div>
+	
+	<br>
+	
+	<code>btn:</code><br>
+	<code>btn-*</code> <span class="text-secondary">(color)</span><br>
+	<code>btn-outline-*</code> <span class="text-secondary">(color)</span><br>
+	<code>btn-*</code> <span class="text-secondary">(sm / lg)</span><br>
+	<code>btn-block</code><br>
+	
+	<br>
+	
+	<button type="button" class="btn btn-primary">Primary Button</button>
+	<button type="button" class="btn btn-primary active">Active Primary</button>
+	<button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+	<a href="#" class="btn btn-primary disabled">Disabled Link</a>
+	
+	<br>
+	
+	<code>btn-group:</code><br>
+	<code>btn-group-*</code> <span class="text-secondary">(sm / lg)</span><br>
+	<code>btn-group-*</code> <span class="text-secondary">(vertical)</span><br>
+	
+	<br>
+	
+	<code>badge:</code><br>
+	<code>badge-*</code> <span class="text-secondary">(color)</span><br>
+	<code>badge-pill</code><br>
+	
+	<br>
+	
+	<code>progress:</code><br>
+	<code>progress-bar-*</code> <span class="text-secondary">(striped / striped + animated)</span><br>
+	<code class="text-secondary">bg-*</code> <span class="text-secondary">(color)</span><br>
+	
+	<br>
+	
+	<code>spinner:</code><br>
+	<code>spinner-*</code> <span class="text-secondary">(border / grow) (sm)</span><br>
+	
+	<br>
+	
+	<code>pagination:</code><br>
+	<code>pagination-*</code> <span class="text-secondary">(sm / lg)</span><br>
+	
+	<code>page-item</code> <span class="text-secondary">(+active / +disabled)</span><br>
+	<code>page-link</code><br>
+	
+	<code class="text-secondary">justify-content-*</code> <span class="text-secondary">(start / center / end)</span><br>
+	
+	<br>
+	
+	<code>breadcrumb:</code><br>
+	<code>breadcrumb-item</code> <span class="etxt-secondary">(+active)</span><br>
+	
+	<br>
+	
+	<code>list-group:</code><br>
+	<code>list-group-*</code> <span class="text-secondary">(flush / horizontal)</span><br>
+	<code>list-group-item</code> <span class="text-secondary">(+active / +disabled)</span><br>
+	<code>list-group-item-*</code> <span class="text-secondary">(color)</span><br>
+	<code>list-group-item-action</code> <span class="text-secondary"></span><br>
+	
+	<br>
+	
+	<ul class="list-group">
+		<li class="list-group-item d-flex justify-content-between align-items-center">
+			Inbox
+			<span class="badge badge-primary badge-pill">12</span>
+		</li>
+		<li class="list-group-item d-flex justify-content-between align-items-center">
+			Ads
+			<span class="badge badge-primary badge-pill">50</span>
+		</li>
+		<li class="list-group-item d-flex justify-content-between align-items-center">
+			Junk
+			<span class="badge badge-primary badge-pill">99</span>
+		</li>
+	</ul>
+	
+	<br>
+	
+	<code>card:</code><br>
+	<code>card-*</code> <span class="text-secondary">(header / body / footer)</span><br>
+	<code>card-*</code> <span class="text-secondary">(title / text / link)</span><br>
+	<code>card-img-*</code> <span class="text-secondary">(top / bottom / overlay) (ostatnie do div)</span><br>
+	
+	<br>
+	
+	<code>card-*</code> <span class="text-secondary">(columns / deck / group)</span><br>
+	
+	<br>
+	
+	<code>stretched-link</code> <span class="text-secondary">a</span><br>
+	
+	<br>
+	
+	<div class="card">
+		<div class="card-header">Header</div>
+		<div class="card-body">
+			<h4 class="card-title">Card title</h4>
+			<p class="card-text">Some example text. Some example text.</p>
+		</div>
+		<div class="card-footer">Footer</div>
+	</div>
+	
+	<br>
+	
+	<code>dropdown:</code><br>
+	<code>dropdown / dropup</code> <span class="text-secondary">(+dropleft / +dropright)</span><br>
+	<code>dropdown-*</code> <span class="text-secondary">(toggle / toggle-split)</span><br>
+	<code>dropdown-*</code> <span class="text-secondary">(menu / item / link / divider / header)</span><br>
+	<code>dropdown-menu-*</code> <span class="text-secondary">(left / right)</span><br>
+	<code>dropdown-item-text</code><br>
+	<code>dropdown-link</code> <span class="text-secondary">(+active / +disabled)</span><br>
+	
+	<br>
+	
+	<code>collapse</code> <span class="text-secondary">(+show)</span><br>
+	
+	<br>
+	
+	<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+	<div id="demo" class="collapse">
+		Lorem ipsum dolor text....
+	</div>
+	
+	<br>
+	
+	<a href="#demo" data-toggle="collapse">Collapsible</a>
+	<div id="demo" class="collapse">
+		Lorem ipsum dolor text....
+	</div>
+	
+	<br>
+	
+	<div id="accordion">
+
+		<div class="card">
+			<div class="card-header">
+				<a class="card-link" data-toggle="collapse" href="#collapseOne">Collapsible Group Item #1</a>
+			</div>
+			<div id="collapseOne" class="collapse show" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum..
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">Collapsible Group Item #2</a>
+			</div>
+			<div id="collapseTwo" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum..
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">Collapsible Group Item #3</a>
+			</div>
+			<div id="collapseThree" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum..
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<br>
+	
+	<code>nav:</code><br>
+	<code>nav</code> <span class="text-secondary">(+flex-column)</span><br>
+	<code>nav-*</code> <span class="text-secondary">(tabs / pills) (+nav-justified)</span><br>
+	<code>nav-*</code> <span class="text-secondary">(item / link) (+active / +disabled)</span><br>
+	
+	<code class="text-secondary">justify-content-*</code> <span class="text-secondary">(start / center / end)</span><br>
+	
+	<br>
+	
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+			<a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+		</li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div class="tab-pane container active" id="home">...</div>
+		<div class="tab-pane container fade" id="menu1">...</div>
+		<div class="tab-pane container fade" id="menu2">...</div>
+	</div>
+	
+	<br>
+	
+	<!-- Nav pills -->
+	<ul class="nav nav-pills">
+		<li class="nav-item">
+			<a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-toggle="pill" href="#menu1">Menu 1</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-toggle="pill" href="#menu2">Menu 2</a>
+		</li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div class="tab-pane container active" id="home">...</div>
+		<div class="tab-pane container fade" id="menu1">...</div>
+		<div class="tab-pane container fade" id="menu2">...</div>
+	</div>
+	
+	<br>
+	
+	<code>navbar:</code><br>
+	<code>navbar-*</code> <span class="text-secondary">(color)</span><br>
+	<code>navbar-*</code> <span class="text-secondary">(collapse)</span><br>
+	<code>navbar-*</code> <span class="text-secondary">(brand / toggler / toggler-icon / nav / text)</span><br>
+	<code>navbar-expand-*</code> <span class="text-secondary">(xs / sm / md / lg / xl)</span><br>
+	
+	<br>
+	
+	<code>fixed-*</code> <span class="text-secondary">(top / bottom)</span><br>
+	<code>sticky-*</code> <span class="text-secondary">(top / bottom)</span><br>
+
+	<br>
+	
+	<code>form-*</code> <span class="text-secondary">(group / inline / control)</span><br>
+	
+	<code>form-group</code> <span class="text-secondary">(do diva z label)</span><br>
+	<code>form-control</code> <span class="text-secondary">(do input / textarea / select) (100% width)</span><br>
+	<code>form-control-*</code> <span class="text-secondary">(sm / lg)</span><br>
+	<code>form-control-*</code> <span class="text-secondary">(plaintext / range / file)</span><br>
+	<code>form-check</code> <span class="text-secondary">(checkbox / radio)</span><br>
+	<code>form-check-*</code> <span class="text-secondary">(input / label)</span><br>
+	<code>form-check-*</code> <span class="text-secondary">(inline)</span><br>
+	
+	<br>
+	
+	<code>was-validated / needs-validation</code> <span class="text-secondary">(do form) (do needs-validation +attr novalidate)</span><br>
+	
+	<br>
+	
+	<code>input-group:</code> <span class="text-secondary">(do diva z input)</span><br>
+	<code>input-group-*</code> <span class="text-secondary">(append / prepend)</span><br>
+	<code>input-group-*</code> <span class="text-secondary">(text)</span><br>
+	
+	
+</div>
+
+
+</body>
+</html>

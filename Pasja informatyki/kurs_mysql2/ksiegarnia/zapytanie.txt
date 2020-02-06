@@ -1,0 +1,1 @@
+SELECT  FROM zamowienia, klienci ORDER BY data DESC

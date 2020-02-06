@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+
+		<title>Ajax 2 - Parse JSON Objects</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		
+	</head>
+	
+	<body>
+		
+		<button id="button1">Get User</button>
+		
+		<button id="button2">Get Users</button>
+		
+		<h2>User</h2>
+		<div id="user"></div>
+		
+		<h2>Users</h2>
+		<div id="users"></div>
+		
+		<script>
+			document.getElementById('button1').addEventListener('click', loadUser);
+			document.getElementById('button2').addEventListener('click', loadUsers);
+			
+			function loadUser() {
+				var xhr = new XMLHttpRequest();
+				
+				xhr.open('GET', 'user.json', true);
+				
+				xhr.onload = function() {
+					if(this.status == 200) {
+						var user = JSON.parse(this.responseText);
+						var output = '';
+						output += '<ul>' +		//	Better use ES6 template strings/literals
+									'<li>ID: ' + user.id + '</li>' +
+									'<li>Name: ' + user.name + '</li>' +
+									'<li>E-mail: ' + user.email + '</li>' +
+									'</ul>';
+									
+						document.getElementById('user').innerHTML = output;
+					}
+				}
+				
+				xhr.send();
+			}
+			
+			function loadUsers() {
+				var xhr = new XMLHttpRequest();
+				
+				xhr.open('GET', 'users.json', true);
+				
+				xhr.onload = function() {
+					if(this.status == 200) {
+						var users = JSON.parse(this.responseText);
+						var output = '';
+						
+						for(var i in users) {
+							output += '<ul>' +		//	Better use ES6 template strings/literals
+										'<li>ID: ' + users[i].id + '</li>' +
+										'<li>Name: ' + users[i].name + '</li>' +
+										'<li>E-mail: ' + users[i].email + '</li>' +
+										'</ul>';
+						}
+						
+						document.getElementById('users').innerHTML = output;
+					}
+				}
+				
+				xhr.send();
+			}
+		</script>
+		
+	</body>
+	
+</html>

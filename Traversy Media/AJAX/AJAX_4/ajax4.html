@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+
+		<title>Ajax 4 - AJAX & PHP Forms</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		
+		<style>
+			.user {
+				display: flex;
+				background-color: #F4F4F4;
+				padding: 10px;
+				margin-bottom: 10px;
+			}
+			
+			.user ul {
+				list-style-type: none;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<button id="button">Get Name</button>
+		
+		<hr>
+		
+		<h2>AJAX GET FORM</h2>
+		
+		<form id="getform">
+			
+			<input type="text" name="name" id="name1">
+			
+			<input type="submit" value="submit" id="submit1">
+			
+		</form>
+		
+		<h2>AJAX POST FORM</h2>
+		
+		<form action="process.php" method="post" id="postform">
+			
+			<input type="text" name="name" id="name2">
+			
+			<input type="submit" value="submit" id="submit2">
+			
+		</form>
+		
+		<script>
+			document.getElementById('getform').addEventListener('submit', getName);
+			document.getElementById('postform').addEventListener('submit', postName);
+			
+			function getName(e) {
+				e.preventDefault();
+				
+				var name = document.getElementById('name1').value;
+				var xhr = new XMLHttpRequest();
+				
+				xhr.open('GET', 'process.php?name=' + name, true);
+				
+				xhr.onload = function() {
+					console.log(this.responseText);
+				}
+				
+				xhr.send();
+			}
+			
+			function postName(e) {
+				e.preventDefault();
+				
+				var name = document.getElementById('name2').value;
+				var params = 'name=' + name;
+				var xhr = new XMLHttpRequest();
+				
+				xhr.open('POST', 'process.php', true);
+				xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+				
+				xhr.onload = function() {
+					console.log(this.responseText);
+				}
+				
+				xhr.send(params);
+			}
+		</script>
+		
+	</body>
+	
+</html>

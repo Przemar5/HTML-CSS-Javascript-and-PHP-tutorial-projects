@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+h1, h2, p, div, blockquote, footer {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+	background-color: #333;
+}
+
+header {
+	background: url('../img/header.jpg') no-repeat center center/cover;
+	width: 800px;
+	height: 134px;
+	border-bottom: solid 3px black;
+}

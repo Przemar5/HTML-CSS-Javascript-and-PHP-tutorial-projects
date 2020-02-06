@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="database" uuid="f5fbcf7b-acb0-4552-af17-2cc7ab9d932b">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\xampp\htdocs\Files\XAMPP\XAMPP\PHP_lessons\FreeCodeCamp.org\Laravel Tutorial\FreeCodeGran\database\database.sqlite</jdbc-url>
+    </data-source>
+  </component>
+</project>

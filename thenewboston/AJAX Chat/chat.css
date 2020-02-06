@@ -1,0 +1,31 @@
+body {
+	font-family: Tahoma;
+	margin: 5px;
+	font-size: 12px;
+	text-align: left;
+}
+
+#content {
+	border: 1px solid black;
+	margin-bottom: 10px;
+}
+
+input {
+	border: 1px #999 solid;
+	font-size: 10px;
+}
+
+#scroll {
+	position: relative;
+	width: 340px;
+	height: 270px;
+	overflow: auto;
+}
+
+#color {
+	text-align: center;
+	padding-top: 30px;
+	padding-left: 10px;
+	border-left: 1px solid black;
+}
+

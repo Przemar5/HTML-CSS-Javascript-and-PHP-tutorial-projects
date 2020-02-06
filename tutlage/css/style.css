@@ -1,0 +1,69 @@
+.navbar-inner {
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+
+.register_form {
+	display: none;
+}
+
+#content {
+	width: 600px;
+	margin: auto;
+}
+
+#form {
+	padding: 10px;
+	background-color: #F7F7F7;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+#td_container {
+	width: 1000px;
+	margin: auto;
+	background-color: #FFF;
+	padding: 10px;
+	padding-top: 40px;
+}
+
+#sidebar {
+	float: left;
+	width: 18%;
+}
+
+#sidebar li a {
+	padding: 3px 5px 3px 10px;
+	margin-bottom: 3px;
+}
+
+#mainContent {
+	float: right;
+	width: 82%;
+}
+
+#mainContent #head {
+	background-color: #F7F7F7;
+	border-bottom: 1px solid #CCC;
+	font-size: 14px;
+	padding: 5px;
+	min-height: 40px;
+	line-height: 40px;
+}
+
+#mainContent #head h2 {
+	float: left;
+	font-size: 24px;
+}
+
+#mainContent #head #add_more {
+	float: right;
+}
+
+#mainBody {
+	clear: both;
+	padding: 10px;
+}

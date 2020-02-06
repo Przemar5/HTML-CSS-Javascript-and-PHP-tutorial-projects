@@ -1,0 +1,14 @@
+
+CREATE TABLE IF NOT EXISTS 'uzytkownicy'(
+	-> first_name VARCHAR(30) NOT NULL,
+	-> last_name VARCHAR(30) Not NULL,
+	-> email VARCHAR(50) NULL,
+	-> street VARCHAR(50) NOT NULL,
+	_> city VARCHAR(60) NOT NULL,
+	-> zip MEDIUM INT UNSIGNED NOT NULL,
+	-> phone VARCHAR(20) NOT NULL,
+	-> sex ENUM('F', 'M') NOT NULL,
+	-> date_entered TIMESTAMP,
+	-> id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY
+);
+

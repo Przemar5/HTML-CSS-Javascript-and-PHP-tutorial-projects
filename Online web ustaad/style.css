@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: tahoma;
+}
+
+.row {
+	
+}
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/background.jpg');
+	height: 100vw;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.left {
+	float: left;
+	width: 300ox;
+}
+
+.right {
+	float: right;
+	width: 300px;
+}
+
+.hero {
+	width: 300px;
+	position: absolute;
+	width: 300px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+h1 {
+	color: #eee;
+}

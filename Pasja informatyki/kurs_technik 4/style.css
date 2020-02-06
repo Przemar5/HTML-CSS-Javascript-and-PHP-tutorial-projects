@@ -1,0 +1,84 @@
+body {
+	background-image: url("img/prism.png");
+	/*background-repeat: no-repeat, repeat-x, repeat-y;*/
+	/*background-position: center, left, right, bottom, top*/;
+	font-family: arial;
+}
+
+.container {
+	margin-left: auto;			/*	wyśrodkowanie	*/
+	margin-right: auto;			/*	wyśrodkowanie	*/
+	margin-top: 50px;
+	width: 900px;
+	text-align: center;
+	/*background-color: white;*/
+}
+
+.kurs {
+	display: inline-block;
+	width: 400px;
+	background-color: white;
+	margin: 0 20px;
+	border: 1px solid brown;
+	opacity: 1;
+}
+
+.kurs p {
+	font-size: 12px;
+	text-align: justify;
+	line-height: 140%;
+	margin: 20px;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h3 {
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+ul.lista {
+	text-align: left;
+	list-style: square url("img/hand.jpg") outside;
+}
+
+ul.lista > li {
+	margin-left: 10px;
+}
+
+/*	link nieodwiedzony	*/
+
+a.link1:link {
+	color: green;
+	text-decoration: underline;
+}
+
+/*	link odwiedzony	*/
+
+a.link1:visited {
+	color: green;
+	text-decoration: underline;
+}
+
+/*	link po najechaniu kursorem	*/
+
+a.link1:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+/*	link klikany	*/
+
+a.link1:active {
+	color: red;
+	text-decoration: underline;
+}

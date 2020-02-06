@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body,
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background: #f4f4f4 url('../img/candlebg.svg');
+	background-size: cover;
+}
